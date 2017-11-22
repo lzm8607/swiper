@@ -1,8 +1,8 @@
-#纯Javascript的Swiper
+# 纯Javascript的Swiper
 
 ![swiper](./record.png)
 
-###使用方法
+### 使用方法
 1. 引用swiper.css
 2. 引用swiper.js
 ```javascript
