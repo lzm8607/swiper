@@ -1,4 +1,4 @@
-# 纯Javascript的Swiper
+# Swiper(原生javascript)
 
 ![swiper](./record.png)
 
