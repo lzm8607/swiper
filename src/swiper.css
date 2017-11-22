@@ -1,0 +1,111 @@
+/*swiper*/
+.swiper {
+    position: relative;
+    height: 40%;
+    /*min-height: 100px;*/
+    width: 100%;
+}
+.swiper *{
+    box-sizing: border-box;
+}
+.swiper>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition-duration: 1s;
+}
+.swiper>div:nth-child(odd){
+    background-color: #dcdcdc;
+}
+.swiper>div:nth-child(even){
+    background-color: #66cccc;
+}
+.swiper>div>a{
+    display: block;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+.swiper .index-dots{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    color: #FFF;
+    bottom: 0;
+    padding: 10px;
+}
+.swiper .index-dots.index-dots-left{
+    text-align: left;
+}
+.swiper .index-dots.index-dots-right{
+    text-align: right;
+}
+.swiper .index-dots.index-dots-middle{
+    text-align: center;
+}
+.swiper .index-dots>li{
+    display: inline-block;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+}
+.swiper .index-dots>li.index-active,.swiper .index-dots>li:hover{
+    background-color: rgba(255,255,255,1);
+}
+.swiper .swiper-nav-left,.swiper .swiper-nav-right{
+    position: absolute;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    margin: auto 10px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.3);
+    top:50%;
+    margin-top: -15px;
+    border-radius: 15px;
+}
+.swiper .swiper-nav-left:after,
+.swiper .swiper-nav-right:after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top:10px;
+    border-top: 2px solid rgba(255,255,255,0.8);
+}
+.swiper .swiper-nav-left:after{
+    border-left: 2px solid rgba(255,255,255,0.8);
+    left: 12px;
+    transform: rotate(-45deg);
+}
+.swiper .swiper-nav-right:after{
+    border-right: 2px solid rgba(255,255,255,0.8);
+    right: 12px;
+    transform: rotate(45deg);
+}
+.swiper .swiper-nav-left{
+    left: 0;
+}
+.swiper .swiper-nav-right{
+    right: 0;
+}
+.swiper .swiper-nav-left:hover,
+.swiper .swiper-nav-right:hover{
+    background-color: rgba(255,255,255,0.8);
+}
+.swiper .swiper-nav-left:hover:after,
+.swiper .swiper-nav-right:hover:after{
+    border-color: rgba(0,0,0,.5);
+}
+.swiper .swiper-active{
+    z-index: 1;
+    opacity: 1;
+    transition-duration: 1s;
+}

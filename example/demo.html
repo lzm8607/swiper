@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1">
+    <title>Swiper Demo</title>
+    <link type="text/css"  rel="stylesheet" href="../src/swiper.css"/>
+</head>
+<style>
+    html,body{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper1{
+        height: 100%;
+    }
+    .swiper-solt{
+        height: 100%;
+        text-align: center;
+        padding: 50px;
+        color: deepskyblue;
+    }
+</style>
+<body>
+<div class="swiper1">
+    <div data-src="./imgs/banner01.jpg" data-url="https://www.baidu.com">
+        <div class="swiper-solt">添加内容</div>
+    </div>
+    <div data-src="./imgs/banner02.jpg" data-url="https://www.sina.com"></div>
+    <div data-src="./imgs/banner03.jpg" data-url="https://www.sina.com"></div>
+    <div data-src="./imgs/banner04.jpeg" data-url=""></div>
+</div>
+<script src="../src/swiper.js"></script>
+<script>
+    window.onload =function () {
+        new Swiper('.swiper1',{
+            nav:true
+        })
+    }
+</script>
+</body>
+</html>
